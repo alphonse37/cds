@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css?family=Righteous");
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+*{
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Informacion del curso */
+
+.contenedor-c {
+    width: 80%;
+    margin-top: 12%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'Poppins', sans-serif;
+    color: #002957;
+}
+
+#sedes {
+    background-color: #1b5483d0; 
+    color: #ffffff;
+    font-size: 20px;
+    height: 100px;
+    padding-top: 30px;
+}
+
+#sedes:hover {
+    background-color:#1b5583;
+}
+
+.intro {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* cursos tarjetas */
+.descripcion, .fechaIn, .fechaFin {
+    font-size: 12px;
+}
+
+#tarjeta {
+    background-color: #cfdbeb;
+    color: #002957;
+    height: 377px;
+}
+
+.tituloCursos {
+    background-color: #002957;
+    color: #fff;
+}
+
+.imgCursos {
+    width: 100%;
+}
+
+#informacion {
+    padding: 30px 20px 30px 40px;
+}
+
+
+
+ footer{
+    margin-top:20px;
+    }
+
+    /* diseño responsive */
+
+@media screen and (max-width: 1300px) {
+
+    .contenedor-comp h3 {
+        font-size: 25px;
+    }
+
+    .descripcion, .fechaIn, .fechaFin {
+        font-size: 12px;
+    }
+    
+    #tarjeta {
+        height: 370px;
+    }
+
+    #informacion {
+        padding: 20px 10px 20px 35px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .descripcion, .fechaIn, .fechaFin {
+        font-size: 11px;
+    }
+
+    #tarjeta {
+        height: 380px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    
+
+    .contenedor-comp h3 {
+        font-size: 20px;
+    }
+}
+
+/* Width 700px*/
+
+@media screen and (max-width: 700px) {
+
+    /* informacion del curso */
+
+    .contenido1 p {
+        font-size: 15px;
+    }
+
+    .contenedor-c {
+        width: 85%;
+        margin-top: 20%;
+    }
+
+   .competencias1 {
+       width: 95%;;
+       display: flex;
+       flex-direction: column;
+   }
+
+   .contenedor-comp .competencias1 .p-comp, .img-comp {
+       width: 100%;
+       padding: 2%;    
+   }
+}

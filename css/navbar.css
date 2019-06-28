@@ -1,0 +1,560 @@
+@import url("https://fonts.googleapis.com/css?family=Righteous");
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+*{
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*Barra de navegación y Footer*/
+
+/*Menu*/
+
+.logo2 {
+    width: 58px;
+    height: 79px;
+    margin-left: 20px;
+
+} 
+
+.barra {
+    color: #ffffff;
+    font-family: 'Righteous', cursive;
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: uppercase;
+    display: flex;
+}
+
+.menu {
+    width: 60vw;
+    background-color: #003B7D;
+    padding: 30px;
+    transition: background .2s linear;
+    -webkit-transition: background .2s linear;
+    -moz-transition: background .2s linear;
+    -ms-transition: background .2s linear;
+    -o-transition: background .2s linear;
+    display: flex;
+}
+
+.nav {
+    width: 100vw;
+}
+
+.menu a {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-decoration: none;
+}
+
+.logo {
+    background-color: #003B7D;
+    width: 8vw;
+}
+
+.texto {
+    background-color: #003B7D;
+    padding-top: 25px;
+    width: 32vw;
+}
+
+.texto h1 {
+    font-size: 25px;
+    text-shadow: 2px 2px black;
+}
+
+#menuExp {
+    background-color: #003B7D;
+    font-size: 15px;
+}
+
+#menuSedes:hover {
+    background-color: #bb0327; 
+}
+
+.menu-bar {
+    display: none;
+    background-color: #fff;
+}
+
+#iconMenu {
+    display: none;
+}
+
+/*Footer*/
+
+.contenedorf {
+    background: #265080;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    display: flex;
+}
+
+.contenedorf h3 {
+    font-size: 15px;
+}
+
+.f-contacto {
+    width: 50%;
+    margin: 0 auto;
+    padding: 1%;
+    font-size: 15px;
+    padding-left: 10%;
+}
+
+.f-contacto h3 {
+    font-size: 20px;
+}
+
+
+.f-contacto a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.f-buscanos {
+    width: 50%;
+    margin: 0 auto;
+    padding: 1%;
+    font-size: 15px;
+    padding-left: 10%;
+}
+
+.f-buscanos h3 {
+    font-size: 20px;
+}
+
+.f-buscanos a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#icono2 {
+    font-size: 15px;
+    float: left;
+}
+
+.casatic, .puentes {
+    display: flex;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.fundacion {
+    display: flex;
+}
+
+.imgCasatic, .imgPuentes {
+    width: 20%;
+    height: 20%;
+    margin: 0 auto;
+}
+
+.colorCasatic, .colorPuentes {
+    width: 20%;
+    height: 20%;
+    margin: 0 auto;
+    display: none;
+}
+
+.imgFundacion {
+    width: 12%;
+    height: 12%;
+}
+
+.infoCasatic, .infoPuentes {
+    width: 80%;
+    padding-top: 3%;
+    margin-left: 5%;
+    font-size: 18px;
+}
+
+.infoFundacion {
+    margin: 0 auto;
+    width: 80%;
+    margin-left: 5%;
+    font-size: 15px;
+}
+
+#icono3 {
+    margin-left: 5%;
+}
+
+#icono3, #icono4 {
+    font-size: 30px;
+}
+
+#icono3:hover, #icono4:hover {
+    color: orange;
+}
+
+.infoKriete {
+    width: 90%;
+}
+
+.informaciontitle {
+    font-size: 16px;
+}
+
+.informacion {
+    font-size: 12px;
+}
+
+/*Copyright*/
+
+.copyright {
+    background: #265080;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 1%;
+    text-align: center;
+    font-size: 12px;
+}
+
+	/* boton para ir arriba */
+.ir-arriba {
+	padding:18px;
+	background:#024959af;
+	font-size:20px;
+	color:#fff;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+    right:20px;
+    z-index: 20;
+}
+
+
+/*Diseño Responsive*/
+
+@media screen and (max-width: 1600px) {
+    .menu {
+        font-size: 15px;
+    }
+
+    .menu a {
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+
+    .texto {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .menu {
+        font-size: 14px;
+    }
+
+    .menu a {
+        padding-left: 11px;
+        padding-right: 11px;    
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .menu {
+        font-size: 13px;
+    }
+
+    .menu a {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .texto h1 {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .menu {
+        font-size: 12px;
+    }
+
+    .menu a {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .texto h1 {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .menu {
+        font-size: 12px;
+    }
+
+    .menu a {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .texto h1 {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .menu {
+        font-size: 12px;
+    }
+
+    .menu a {
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+
+    .texto h1 {
+        font-size: 15px;
+    }
+}
+
+
+/* Width 1220px*/
+
+@media screen and (max-width:1220px) {
+
+
+    /*Que enseñamos*/
+    .contenedor2 {
+        width: 90%;
+    }
+} 
+
+
+/* Width 990px*/
+
+@media screen and (max-width:990px) {
+    /*Menu*/
+
+    #cerrar {
+        display: none;
+    }
+ 
+    #nav:target #abrir {
+        display: none;
+    }
+ 
+    #nav:target #cerrar {
+        display: block;
+    }
+
+    .menu-bar {
+        display: block;
+        background: #003B7D;
+        z-index: 100;
+        font-size: 30px;
+        width: 8vw;
+     }
+ 
+    .boton-menu {
+        color: #ffffff;
+        text-decoration: none;
+        text-align: left;
+        margin-left: 22px;
+        border: none;
+    } 
+
+    .boton-menu:hover {
+        color: #fff;
+    }
+
+    .logo {
+        width: 12vw;
+    }
+
+    .logo2{
+        width: 31px;
+        height: 42px;
+        margin-top: 0px;
+    }
+
+    .texto {
+        background-color: #003B7D;
+        padding-top: 15px;
+        width: 80vw;
+        display: block;
+    }
+
+    .texto h1 {
+        font-size: 15px;
+        font-family: 'Righteous', cursive;
+        text-shadow: 2px 2px black;
+       
+    }
+
+    .menu {
+        width: 65%;
+        display: none;
+        left: 0%;
+        position: fixed;
+        height: 100%;
+        top: 9%;
+        background-color: rgba(0, 58, 125, 0.863);
+    }
+
+    .menu a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 15px;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+    }
+
+    #menuExp {
+        margin-top: -10%;
+        margin-left: 40%;
+    }
+
+    #iconMenu {
+        display: block;
+        float: left;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    #icono3, #icono4 {
+        font-size: 20px;
+    }
+
+    .contenedorf {
+        display: block;
+     }
+    
+    .contenedorf h3 {
+        font-size: 20px;
+     }
+    
+    .f-contacto {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 5%;
+        padding-left: 10%;
+     }
+    
+    .f-buscanos {
+        width: 100%;
+        margin-bottom: 5%;
+     }
+
+     .casatic, .puentes {
+         margin-left: 15%;
+     }
+
+     .informacion, #icono2, .informaciontitle {
+         margin-left: 30%;
+     }
+     
+}
+
+
+@media screen and (max-width: 600px) {
+    
+    .menu-bar .boton-menu {
+        margin-left: 22px;
+        padding-top: 8px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+ 
+    .menu-bar .boton-menu {
+        margin-left: 13px;
+        padding-top: 8px;
+        font-size: 20px;
+    }
+
+    .menu {
+        top: 7%;
+    }
+
+    .texto {
+        padding-top: 15px;
+    }
+
+
+    .logo2{
+        width: 25px;
+        height: 34px;
+        margin-top: 0px;
+    }
+
+    /*Footer*/
+
+   .contenedorf h3 {
+    font-size: 20px;
+    }
+
+    .f-contacto {
+        font-size: 11px;
+    }
+
+    .f-buscanos {
+        font-size: 15px;
+    }
+
+    #icono2 {
+        font-size: 15px;
+    }
+
+    #icono3, #icono4 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    /* Menu */
+
+    .menu-bar .boton-menu {
+        margin-left: 13px;
+    }
+
+    .menu {
+        top: 7%;
+    }
+
+    .texto h1{
+        font-size: 12px;
+    }
+
+    .logo2{
+        width: 20px;
+        height: 28px;
+        margin-top: 0px;
+    }
+
+    .casatic, .puentes {
+        margin-left: 5%;
+    }
+
+    .informacion, #icono2, .informaciontitle {
+        margin-left: 18%;
+    }
+
+    .infoCasatic > p, .infoPuentes > p {
+        font-size: 15px;
+    }
+}

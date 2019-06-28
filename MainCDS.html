@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" type="image" href="./imagenes/logos/logoPequeno.ico">
+    <title>Centro de Desarrrollo de Software</title>
+
+	<!-- Links CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/navbar.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./css/carga.css">
+	
+	<!-- Links JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+	<script src="./js/inicio.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.4.0.js"></script>
+	<script src="./js/carga.js"></script>
+	<script src="./js/navbarFooter.js"></script>
+		
+</head>
+<body>
+
+	<!-- pantalla de carga -->
+
+    <div id="contdr_carga">
+        <div id="carga"></div>
+    </div>
+
+<header>
+	<!--Barra de navegacion-->
+		<nav class="fixed-top">
+			<div class="barra">
+
+				<!-- boton para menu en dispositivos moviles -->
+				<div class="menu-bar" id="nav">
+					<a href="#nav" class="boton-menu" id="abrir"><i class="fas fa-bars"></i></a>
+					<a href="#" class="boton-menu" id="cerrar"><i class="fas fa-times"></i></a>
+				</div>
+				<!-- fin boton para menu -->
+
+				<!-- logo de FGK -->
+				<div class="logo">
+						<a href="MainCDS.html" class="navbar-brand">
+							<img src="./imagenes/logos/logo.png" class="logo2" alt="logo">
+						</a>
+				</div>
+
+				<div class="texto text-center">
+					<h1 class="text-white">CENTROS DE DESARROLLO DE SOFTWARE</h1>
+				</div>
+
+				<!-- menu navbar -->
+				<div class="menu">
+					<nav class="nav">
+						<a href="MainCDS.html" class=" text-white" id="f-item-1"><i class="fas fa-home" id="iconMenu"></i>&nbsp; Inicio</a>
+						<a href="quienessomos.html" class="text-white" id="f-item-2"><i class="fas fa-briefcase" id="iconMenu"></i>&nbsp; Quienes somos</a>
+						<a href="cursos.html" class="text-white" id="f-item-3"><i class="fas fa-graduation-cap" id="iconMenu"></i>&nbsp; Nuestros cursos</a>
+						<a href="#" class=" dropdown-toggle text-white" id="f-item-4" data-toggle="dropdown"><i class="fas fa-school" id="iconMenu"></i>&nbsp; Sedes</a>
+						<div class="dropdown-menu" id="menuExp">
+							<a class="dropdown-item text-white" href="sedeSanta.html" id="menuSedes" >CDS Santa Ana</a>
+							<a class="dropdown-item text-white" href="sedeSs.html" id="menuSedes">CDS San Salvador</a>
+							<a class="dropdown-item text-white" href="sedeSonso.html" id="menuSedes">CDS Sonsonate</a>
+							<a class="dropdown-item text-white" href="sedeAhua.html" id="menuSedes">CDS Ahuachapán</a>
+							</div>
+						<a href="Noticias.html" class=" text-white" id="f-item-5"><i class="far fa-newspaper" id="iconMenu"></i>&nbsp; Noticias</a>
+						<a href="galeria.html" class=" text-white" id="f-item-6"><i class="far fa-images" id="iconMenu"></i>&nbsp; Galería</a>
+						<a href="contactanos.html" class=" text-white" id="f-item-7"><i class="fas fa-mail-bulk" id="iconMenu"></i>&nbsp; Contáctanos</a>
+					</nav>
+				</div>
+				<!-- fin menu navbar -->
+			</div>
+		</nav>
+		<!-- fin barra de navegación -->
+	</header>
+
+
+	<!-- Imagen de inicio -->
+	<section class="imgInicio" >
+			<img class="imagenInicio" src="./imagenes/inicio/fondo3.jpg" alt="imagen grupal">
+					
+			<p class="info1">¡Bienvenidos!</p>
+			<p class="centro">Nuestro principal objetivo es capacitar jóvenes en el área de programación.<br><br> ¡Conócenos!</p>
+	</section>
+
+
+		<!--Quienes somos-->
+	<section class="contenedor1">
+		<section class="queSomos text-center">
+			<h1>¿Qué son los CDS?</h1><br>
+			<p>En los Centros de Desarrollo de Software formamos jovenes en el área de desarrollo de software, aprendiendo los lenguajes de programación de mayor demanda en el sector de tecnología.</p>
+			<a href="quienessomos.html"><em class="links">-Quienes somos</em></a>
+		</section>
+		
+		<section class="qSimg1">
+			<img src="./imagenes/inicio/quienesSomos.jpg" alt="imagen grupal">
+		</section>
+	</section>
+	<!-- fin quienes somos -->
+
+	<!-- Nuestras sedes -->
+	<section class="contenedor-sedes">
+		<section class="container">
+			<!-- encabezado -->
+			<h1>Nuestras Sedes</h1>
+
+			<br>
+			
+			<section class="informacionSedes">
+			<p>El proyecto  de CDS tiene impacto en 4 departamentos a nivel nacional (Santa Ana, San Salvador, Sonsonate y Ahuachapán), en los cuales el principal objetivo es capacitar a la mayor cantidad de jóvenes en situación de vulnerabilidad, brindándoles mejores oportunidades.</p>
+			</section>
+			<!-- fin encabezado -->
+			<br>
+
+			<!-- imagenes sedes -->
+			<section id="nuestrasSedes">
+				<section class="compuMapas" id="dibujoSedes">
+					<div>
+						<img src="./imagenes/inicio/dibujo.jpg" alt="imagen de fondo"  id="imgSedes">
+					</div>
+		
+					<div>
+						<img src="./imagenes/inicio/santa.png" alt="santa ana" id="imgDepa1">
+					</div>
+	
+					<div>
+						<img src="./imagenes/inicio/salvador.png" alt="san salvador" id="imgDepa2">
+					</div>
+	
+					<div>
+						<img src="./imagenes/inicio/sonsonate.png" alt="sonsonate" id="imgDepa3">
+					</div>
+	
+					<div>
+						<img src="./imagenes/inicio/ahuachapan.png" alt="ahuachapan" id="imgDepa4">
+					</div>
+				</section>
+				<!-- fin imagenes sedes -->
+		
+				<!-- informacion de sedes -->
+				<section class="infoMapas" id="botonesSedes">
+					<div class="botonS" id="imgBot1">
+						<p><strong>El Centro de Desarrollo de Software Santa Ana</strong> está ubicado en la sede de Oportunidades de Fundación de Gloria de Kriete en el municipio de Santa Ana.&nbsp;&nbsp;<a href="sedeSanta.html" class="masInfo"><strong> Ver más.</strong></a></p>
+					</div>
+		
+					<div class="botonS" id="imgBot2">
+						<p><strong>El Centro de Desarrollo de Software San Salvador</strong> está ubicado en el edificio Oportunidades de Fundación de Gloria de Kriete en el municipio de San Salvador.&nbsp;&nbsp;<a href="sedeSs.html" class="masInfo"><strong> Ver más.</strong></a></p>
+					</div>
+		
+					<div class="botonS" id="imgBot3">
+						<p><strong>El Centro de Desarrollo de Software Sonsonate</strong> está ubicado en Asociación AGAPE en el municipio de Sonzacate.&nbsp;&nbsp;<a href="sedeSonso.html" class="masInfo"><strong> Ver más.</strong></a></p>
+					</div>
+		
+					<div class="botonS" id="imgBot4">
+						<p><strong>El Centro de Desarrollo de Software Ahuachapán</strong> está ubicado en Fundación JBorja en el municipio de Ahuachapán.&nbsp;&nbsp;<a href="sedeAhua.html" class="masInfo"><strong> Ver más.</strong></a></p>
+					</div>
+				</section>
+				<!-- fin informacion de sedes -->
+			</section>
+		</section>
+	</section>
+	<!-- fin nuestras sedes -->
+
+	<!-- Que enseñamos -->
+	<section class="contenedor2">
+		<!-- encabezado -->
+		<h1>¿Qué enseñamos?</h1><br>
+		<h3>En los CDS impartimos cursos enfocados en diferentes tecnologías como las que te mostramos a continuación, puedes consultar más acerca de ellos haciendo click <a href="./cursos.html" class="links"> aquí.</a></h3><br>
+		
+		<!-- tarjetas de cursos impartidos -->
+		<section class="cursosImpart">
+			<section class="curso1" id="img1">
+				<img src="./imagenes/inicio/img1.jpg" id="c1">
+				<h6 id="t1">C# MVC</h6>
+			</section>
+
+			<section class="curso1" id="img2">
+				<img src="./imagenes/inicio/img2.jpg" id="c1">
+				<h6 id="t1">C# Xamarin</h6>
+			</section>
+
+			<section class="curso1" id="img3">
+				<img src="./imagenes/inicio/img3.jpg" id="c1">
+				<h6 id="t1">HTML</h6>
+			</section>
+
+			<section class="curso1" id="img4">
+				<img src="./imagenes/inicio/img4.jpg" id="c1">
+				<h6 id="t1">PHP</h6>
+			</section>
+
+			<section class="curso1" id="img5">
+				<img src="./imagenes/inicio/img5.jpg" id="c1">
+				<h6 id="t1">JAVA</h6>
+			</section>
+
+			<section class="curso1" id="img6">
+				<img src="./imagenes/inicio/img6.jpg" id="c1">
+				<h6 id="t1">TESTING</h6>
+			</section>
+		</section>
+		<!-- fin de tarjetas de cursos -->
+	</section>
+	<!-- fin de que enseñamos -->
+
+	<!-- Fases del programa -->
+	<section class="contenedor3">
+		<!-- encabezado -->
+		<section class="c3-info">
+			<h1>Fases del proyecto</h1><br>
+			<p>Nuestro proyecto cuenta con 3 fases con una duración de 3 meses cada una, en las cuales cada uno de los jóvenes participantes puede obtener una certificación. El aprobar la certificación con una alta puntuación le garantiza su paso a la siguiente fase.</p><br><br>
+		</section>
+
+		<!-- circulos de fases-->
+		<section class="c3f">
+			<section class="c3-fase">
+				<section class="f-1">
+					<h4>Fase 1: Formación Técnica</h4>
+				</section>
+			
+				<section class="f-2">
+					<h4>Fase 2: Aplicación Técnica</h4>
+				</section>
+			
+				<section class="f-3">
+					<h4>Fase 3: Inserción Laboral</h4>
+				</section>
+			</section>
+			<!-- fin de circulos de fases -->
+
+			<!-- informacion de fases-->
+			<section class="c3-faseinfo">
+				<section class="f-texto1">
+					<h4 class="faseOculta1 text-center">Fase 1: Formación Técnica</h4>
+					<p id="textoInfo">La primera fase del proyecto de Centros de Desarrollos de Software (CDS) es la formación técnica, aquí los alumnos obtendrán los insumos necesarios para el desarrollo de software mediante módulos de acuerdo al lenguaje del curso, además de otras asignaturas como lógica matemática, habilidades para la vida, y metodología para la investigación y traducción de textos.</p>
+				</section>
+					
+				<section class="f-texto2">
+					<h4 class="faseOculta2 text-center">Fase 2: Aplicación Técnica</h4>
+					<p id="textoInfo">En la fase dos los alumnos realizarán proyectos para compañías de software en donde aplicarán los conocimientos adquiridos y aprenderán nuevas técnicas.</p>
+				</section>
+					
+				<section class="f-texto3 text-center">
+					<h4 class="faseOculta3">Fase 3: Inserción Laboral</h4>
+					<p id="textoInfo">En la tercer fase además de seguir aprendiendo nuevas técnicas, los alumnos podrán aplicar a entrevistas realizadas por las empresas aliadas, de esta forma se buscará brindarle apoyo para una inserción laboral más fácil.</p>
+				</section>
+			</section>
+			<!-- fin de informacion de fases -->
+		</section>
+
+	</section>
+
+	<!-- Requisitos -->
+	<section class="requisitos">
+		<h3>¡¿Estás Interesado?!</h3>
+
+		<!-- imagen -->
+		<section class="requisitosInfo">
+			<section class="requisitosImg">
+				<img src="./imagenes/inicio/cds 45.jpg" alt="imagen de cds">
+			</section>
+			
+			<!-- links a requisitos -->
+			<section class="requisitosTexto">
+				<p>¡No pierdas la oportunidad!, conoce más acerca de nuestro proyecto.<br><br><br>
+				¿Tienes dudas?, <a href="contactanos.html" class="links">¡contáctanos!</a></p>
+			</section>
+		</section>
+	</section>
+	<!-- fin de requisitos -->
+
+	<!-- boton para ir arriba -->
+	<span class="ir-arriba"><i class="fas fa-angle-up"></i></span>
+
+	<!--Footer-->
+	<footer>
+		<section class="contenedorf">
+		
+<!-- Buscanos -->
+
+			<section class="f-contacto">
+				<h3>Búscanos:</h3>
+				<br>
+				
+				<section class="fundacion">
+					
+					<img src="./imagenes/logos/logofgk.png" alt="logo puentes" class="imgFundacion">
+					<section class="infoFundacion">
+						<p class="infoKriete">Conoce más sobre Fundación Gloria de Kriete y su labor en la sociedad visitando nuestras redes sociales.</p>
+						<a href="https://es-la.facebook.com/PROYECTOSFGK/" target="_blank">&nbsp;&nbsp;&nbsp;<i class="fab fa-facebook-f" id="icono3"></i>&nbsp;&nbsp;&nbsp;</a>
+	
+						<a href="https://www.instagram.com/Proyectosfgk/" target="_blank"><i class="fab fa-instagram" id="icono3"></i></i>&nbsp;&nbsp;&nbsp;</a>
+		
+						<a href="http://proyectosfgk.org/" target="_blank"><i class="fas fa-globe" id="icono3"></i></i>&nbsp;&nbsp;&nbsp;</a>
+					</section>
+				</section>
+
+				<br>
+
+				<p class="informaciontitle">Contáctanos:</p>
+				<i class="fas fa-map-marker-alt" id="icono2" ></i>
+				<p class="informacion">&nbsp;&nbsp;49 Av Sur, San Salvador.</p>
+
+				<i class="fas fa-phone" id="icono2"></i>
+				<p class="informacion">&nbsp;&nbsp;(503) 2223-2434</p>
+
+				<i class="fab fa-whatsapp" id="icono2"></i>
+				<p class="informacion">&nbsp;&nbsp;(503) 7226-6040</p>
+
+				<i class="fas fa-envelope" id="icono2"></i>
+				<p class="informacion">&nbsp;&nbsp;info@proyectosfgk.org</p>
+			</section>
+
+			<!-- Organizaciones aliadas -->
+
+			<section class="f-buscanos">
+				<h3>Organizaciones aliadas:</h3>
+
+				<br>
+				<section class="casatic">
+					
+					<img src="./imagenes/logos/casatic.png" alt="logo CasaTIC" class="imgCasatic">
+					<img src="./imagenes/logos/casatic1.png" alt="logo CasaTIC" class="colorCasatic">
+					
+					<section class="infoCasatic">
+						<p>CasaTIC</p>
+						<a href="https://www.facebook.com/casatic/" target="_blank"><i class="fab fa-facebook-f" id="icono4"></i>&nbsp;&nbsp;&nbsp;</a>
+	
+						<a href="https://twitter.com/CASATIC_SV?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fab fa-twitter" id="icono4"></i></i>&nbsp;&nbsp;&nbsp;</a>
+		
+						<a href="http://www.casatic.org/" target="_blank"><i class="fas fa-globe" id="icono4"></i></i>&nbsp;&nbsp;&nbsp;</a>
+					</section>
+				</section>
+
+				<section class="puentes">
+					
+					<img src="./imagenes/logos/usaid.png" alt="logo puentes" class="imgPuentes">
+					<img src="./imagenes/logos/usaid1.png" alt="logo puentes" class="colorPuentes">
+
+					<section class="infoPuentes">
+						<p>Puentes Para El Empleo</p>
+						<a href="https://es-la.facebook.com/USAIDpuentesempleo/" target="_blank"><i class="fab fa-facebook-f" id="icono4"></i>&nbsp;&nbsp;&nbsp;</a>
+	
+						<a href="https://twitter.com/puentesempleo?lang=es" target="_blank"><i class="fab fa-twitter" id="icono4"></i></i>&nbsp;&nbsp;&nbsp;</a>
+		
+						<a href="https://www.usaid.gov/es/el-salvador" target="_blank"><i class="fas fa-globe" id="icono4"></i></i>&nbsp;&nbsp;&nbsp;</a>
+					</section>
+				</section>
+			</section>
+			
+		</section>
+				
+			<section class="copyright">
+			<p>Derechos reservados &copy; 2019, Centros de Desarrollo de Software.</p>
+			</section>
+			
+	</footer>
+
+	<!-- Fin footer -->
+
+	</body>
+</html>
+

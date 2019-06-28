@@ -1,0 +1,749 @@
+@import url("https://fonts.googleapis.com/css?family=Righteous");
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+*{
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*Foto inicio*/ 
+.imgInicio {
+    margin-bottom: 25%;
+}
+
+.imagenInicio {
+    width: 100%;
+    margin-top: 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+
+.info1{
+    margin-top:-40%;
+    font-size: 80px;
+    color:white; 
+    text-shadow: 3px 4px 3px rgba(0, 0, 0, 0.835);
+    text-align: center;
+ }
+
+ .centro{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    color:white;
+    font-weight:650; 
+    text-shadow: 3px 2px 2px rgb(0, 0, 0);
+    text-align: center;
+ }
+
+/*Quienes somos*/
+
+.contenedor1 {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    color: #002957;
+    display: flex;
+}
+
+.contenedor1 .queSomos h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.contenedor1 .queSomos p {
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.contenedor1 .queSomos a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: #002957;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.queSomos {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 50%;
+}
+
+.qSimg1 {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 50%;
+}
+.contenedor1 .qSimg1 img {
+    width: 100%;
+}
+
+/* Nuestras Sedes */
+
+.contenedor-sedes {
+    margin-bottom: 7%;
+    font-family: 'Poppins', sans-serif;
+    color: #002957;
+}
+
+.contenedor-sedes h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.informacionSedes {
+    font-size: 20px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#imgSedes{
+    width: 100%;
+    margin-top: 40px;
+}
+
+#imgDepa1, #imgDepa2, #imgDepa3, #imgDepa4 {
+    width: 25%;
+    margin-top: -125%;
+    margin-left: 60%;
+    display: none;
+}
+
+.botonS {
+    font-size: 15px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.masInfo { 
+    color: #ffffff;
+    font-size: 15px;
+    color: #ed1b23;
+}
+
+.botonS a:hover {
+    text-decoration: none;
+    color: #ed1b23;
+}
+
+.botonS:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 1px #3f888f;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+#nuestrasSedes {
+    display: flex;
+}
+
+.compuMapas {
+    width: 50%;
+}
+
+.infoMapas {
+    width: 50%;
+}
+
+/*Que enseñamos*/
+.contenedor2 {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #002957;
+    text-transform: uppercase;
+}
+
+.contenedor2 .cursosImpart {
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.cursosImpart {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenedor2 h3 {
+    text-transform: none;
+    font-size: 25px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contenedor2 .cursosImpart .curso1 {
+    margin: 0 auto;
+}
+
+#c1 {
+    width: 215px;
+    height: 271px;
+    opacity: 0.7;
+}
+
+#c1:hover {
+    opacity: 1;
+}
+
+#t1 {
+    background-color: rgba(0, 41, 87, 0.8);
+    font-size: 25px;
+    color: #ffffff;
+}
+
+
+/*Fases del proyecto*/
+
+.contenedor3 {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10%;
+    font-family: 'Poppins', sans-serif;
+    color: #002957;
+}
+
+.contenedor3 .c3-info{
+    text-align: center;
+}
+
+.contenedor3 .c3-info h1 {
+    text-transform: uppercase;
+}
+
+.contenedor3 .c3-info p {
+    font-size: 18px;
+    margin-left: 18%;
+    margin-right: 18%;
+}
+
+.contenedor3 .c3f {
+    width: 100%;
+    display: flex;
+}
+
+.contenedor3 .c3f .c3-fase {
+    width: 50%;
+}
+
+.contenedor3 .c3f .c3-faseinfo {
+    width: 50%;
+}
+.f-1 {
+    width: 250px;
+    height: 250px;
+    margin-left: 3%;
+    border-radius: 150px;
+    background-color: #3f888f;
+    color: #ffffff;
+}
+
+.f-2 {
+    width: 225px;
+    height: 225px;
+    margin-left: 50%;
+    margin-top: -35%;
+    border-radius: 150px;
+    background-color: #1b5583;
+    color: #ffffff;
+}
+
+.f-3 {
+    width: 200px;
+    height: 200px;
+    margin-left: 30%;
+    margin-top: -5%;
+    border-radius: 150px;
+    background-color: #1d334a;
+    color: #ffffff;
+}
+
+.contenedor3 .c3f .c3-fase .f-1 h4 {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 25%;
+}
+
+.contenedor3 .c3f .c3-fase .f-2 h4 {
+    text-align: center;
+    font-size: 29px;
+    padding-top: 25%;
+}
+
+.contenedor3 .c3f .c3-fase .f-3 h4 {
+    text-align: center;
+    font-size: 27px;
+    padding-top: 25%;
+}
+
+.contenedor3 .c3f .c3-faseinfo {
+    padding: 2%;
+    font-size: 15px;
+}
+
+#textoInfo {
+    padding: 2%;
+    text-align: justify;
+}
+
+
+.f-texto1:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 1px #3f888f;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.f-texto2:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 1px #1b5583;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.f-texto3:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 1px #1d334a;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.faseOculta1, .faseOculta2, .faseOculta3 {
+    display: none;
+}
+
+/*Requisitos*/
+
+.requisitos {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10%;
+    font-family: 'Poppins', sans-serif;
+    color: #002957;
+}
+
+.requisitos h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 38px;
+    padding: 5%;
+}
+
+.requisitosInfo {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.requisitosTexto {
+    width: 50%;
+    font-size: 22px;
+    padding: 2%;
+    text-align: center;
+}
+
+.requisitosImg {
+    width: 50%;
+}
+
+.requisitosImg img {
+    width: 100%;
+    box-shadow: 10px 10px 0px 1px #3f888f;
+}
+
+.links {
+    color: #ed1b23;
+    text-decoration: none;
+}
+
+.links:hover {
+    color: #ed1b23;
+    text-decoration: none;
+}
+
+/*Diseño Responsive*/
+/* Width 1220px*/
+
+@media screen and (max-width:1220px) {
+
+
+    /*Que enseñamos*/
+    .contenedor2 {
+        width: 90%;
+    }
+
+    /*Fases del proyecto*/
+
+    .contenedor3 .c3f .c3-fase .f-1 {
+        margin-left: 3%;
+    }
+} 
+
+/* Width 1000px*/
+
+@media screen and (max-width:1000px) {
+
+    .imgInicio {
+        margin-bottom: 15%;
+    }
+
+    /* Requisitos */
+    
+    .requisitos .requisitosInfo p {
+        font-size: 19px;
+    }
+
+
+    /*Quienes somos*/
+
+    .contenedor1 .queSomos h1 {
+        font-size: 25px;
+    }
+
+    .contenedor1 .queSomos p {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .contenedor1 .queSomos a {
+        font-size: 14px;
+    }
+
+    /*Que enseñamos*/
+    .contenedor2 {
+        width: 80%;
+    }
+    
+    .contenedor2 .cursosImpart {
+        width: 100%;
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+    }
+    
+}
+
+/* Width 900px*/
+
+@media screen and (max-width:990px) {
+
+    /* foto inicio */
+    .imgInicio {
+        margin-bottom: 25%;
+    }
+    
+    
+    .info1{
+        font-size: 60px;
+     }
+    
+     .centro{
+        font-size: 25px;
+     }
+
+     /*Quienes somos*/
+
+     .contenedor1 .queSomos h1 {
+        font-size: 22px;
+    }
+
+      /*Que enseñamos*/
+
+
+    /*Fases del proyecto*/
+    .contenedor3 .c3f .c3-faseinfo {
+        padding: 5%;
+        font-size: 15px;
+    }
+
+    .contenedor3 .c3f .c3-fase .f-1 {
+        margin-left: 0%;
+    }
+
+    .contenedor3 .c3f .c3-fase .f-2 {
+        margin-left: 5%;
+        margin-top: 0%;
+    }
+
+    .contenedor3 .c3f .c3-fase .f-3 {
+        margin-left: 8%;
+        margin-top: 0%;
+    }
+
+    /* Requisitos */
+    
+    .requisitos .requisitosInfo p {
+        font-size: 17px;
+    }
+}
+
+/* Width 800px*/
+
+@media screen and (max-width: 800px) {
+    
+    
+    .imgInicio {
+        margin-bottom: 8%;
+    }
+
+     /*Quienes somos*/
+
+    .contenedor1 {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .queSomos {
+        width: 100%;
+    }
+
+    .qSimg1 {
+        padding-top: 0%;
+        width: 100%;
+    }
+    .contenedor1 .qSimg1 img {
+        width: 100%;
+    }
+
+    /* nuestras sedes */
+    #nuestrasSedes {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .compuMapas {
+        width: 100%;
+    }
+    
+    .infoMapas {
+        width: 100%;
+    }
+    
+    /*que enseñamos*/
+
+    .contenedor2 h3 {
+        font-size: 20px;
+    }
+
+    /*Fases del proyecto*/
+
+    .contenedor3 .c3-info h1 {
+        text-transform: uppercase;
+        font-size: 25px;
+    }
+
+    .contenedor3 .c3-info p {
+        font-size: 15px;
+    }
+
+    .contenedor3 .c3f .c3-fase .f-1 {
+        margin-left: 0%;
+    }
+
+    .contenedor3 .c3f .c3-fase .f-2 {
+        margin-left: 5%;
+        margin-top: 0%;
+    }
+
+    .contenedor3 .c3f .c3-fase .f-3 {
+        margin-left: 8%;
+        margin-top: 0%;
+    }
+    /* requisitos */
+
+    .requisitos {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10%;
+    }
+    
+    .requisitos h3 {
+        font-size: 30px;
+    }
+    
+    .requisitosInfo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .requisitosTexto {
+        width: 100%;
+        font-size: 22px;
+        padding: 2%;
+        text-align: center;
+    }
+    
+    .requisitosImg {
+        width: 100%;
+    }
+}
+
+/* Width 700px*/
+
+@media screen and (max-width: 700px) {
+ 
+
+    /* foto inicio */
+    .imgInicio {
+        margin-bottom: 15%;
+    }
+    
+    
+    .info1{
+        font-size: 50px;
+     }
+    
+     .centro{
+        font-size: 20px;
+     }
+
+     /*Fases del proyecto*/
+     .contenedor3 .c3f .c3-faseinfo {
+        padding: 5%;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* foto inicio */
+    .imgInicio {
+        margin-bottom: 15%;
+    }
+    
+    
+    .info1{
+        font-size: 40px;
+     }
+    
+     .centro{
+        font-size: 17px;
+     }
+
+     /* fases */
+
+     .c3-fase {
+         display: none;
+     }
+
+     .contenedor3 .c3f .c3-faseinfo {
+         width: 100%;
+     }
+
+     .faseOculta1, .faseOculta2, .faseOculta3 {
+         display: block;
+         height: 50px;
+         padding: 10px;
+         color: #ffffff;
+         font-size: 20px;
+     }
+     
+     .faseOculta1 {
+        background-color: #3f888f;
+    }
+
+    .faseOculta2 {
+        background-color: #1b5583;
+    }
+
+    .faseOculta3 { 
+        background-color: #1d334a;
+    }
+
+   
+}
+
+@media screen and (max-width: 500px) {
+    /* foto inicio */
+    .imgInicio {
+        margin-bottom: 15%;
+    }
+    
+    
+    .info1{
+        font-size: 30px;
+     }
+    
+     .centro{
+        font-size: 14px;
+     }
+
+    /*que enseñamos*/
+
+    .contenedor2 h3 {
+        font-size: 18px;
+    }
+
+     /*Fases del proyecto*/
+     .contenedor3 .c3f .c3-faseinfo {
+        padding: 1%;
+        font-size: 13px;
+    }
+
+
+    .contenedor3 .c3f {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contenedor3 .c3f .c3-fase {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .contenedor3 .c3f .c3-faseinfo {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    /* foto inicio */
+    .imgInicio {
+        margin-bottom: 15%;
+    }
+    
+    
+    .info1{
+        font-size: 25px;
+     }
+    
+     .centro{
+        font-size: 12px;
+     }
+
+    /*que enseñamos*/
+
+    .contenedor2 h3 {
+        font-size: 15px;
+    }
+}

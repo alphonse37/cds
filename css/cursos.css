@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css?family=Righteous");
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+*{
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Informacion del curso */
+
+
+.contenedor-c {
+    width: 80%;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'Poppins', sans-serif;
+    color: #002957;
+}
+
+.contenido1 {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+    font-family: 'Poppins', sans-serif;
+    color: #002957;
+}
+
+.cursos {
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Diseño de linea en tema */
+
+.efecto::after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 4px;
+    left: 50%;
+    margin-left: -50px;
+    background: #003B7D;
+}
+
+/* Diseño de tarjetas */
+
+.contenido1 p {
+    font-size: 25px;
+    text-align: center;
+}
+
+.contenedor-comp h3 {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.descripcion {
+    font-size: 15px;
+}
+
+#tarjeta {
+    background-color: #cfdbeb;
+    color: #002957;
+    height: 377px;
+    /* box-shadow: 5px 8px 15px gray; */
+}
+
+.tituloCursos {
+    background-color: #002957;
+    color: #fff;
+}
+
+.imgCursos {
+    width: 100%;
+}
+
+#informacion {
+    padding: 30px 20px 30px 40px;
+}
+
+/*Materias*/
+
+.materias {
+    width: 80%;
+    margin-top: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'Poppins', sans-serif;
+    color: #002957;
+}
+
+.materias h2 {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1%; 
+}
+
+.materias p {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 5%;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.materias1, .materias2 {
+    width: 100%;
+    display: flex;
+}
+
+.materias1 .progra, .matematica {
+    width: 50%;
+    margin-bottom: 5%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.materias2 .ingles, .habilidades {
+    width: 50%;
+    margin-bottom: 5%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.materias img {
+    width: 100%;
+    padding-bottom: 2%;
+}
+
+.materias .materias1 h3{
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center; 
+}
+
+.materias .materias2 h3{
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center; 
+}
+
+.materias .materias1 p {
+    font-size: 13px;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.materias .materias2 p {
+    font-size: 13px;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+/*Requisitos*/
+
+.c-requisitos {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10%;
+    font-family: 'Poppins', sans-serif;
+    color: #002957;
+}
+
+.c-requisitos h3 {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.c-requisitos .requisitos1 {
+    display: flex;
+    padding: 3%;
+}
+
+.c-requisitos .requisitos1 .img-req, .p-req {
+    width: 50%;
+    padding: 2%;    
+}
+
+.c-requisitos .requisitos1 .p-req p {
+    font-size: 20px;
+}
+
+.c-requisitos .requisitos1 .img-req img {
+    width: 95%;
+    box-shadow: 10px 10px 0px 1px #3f888f;
+}
+
+ footer{
+    margin-top:20px;
+    }
+
+/* Diseño Responsivo */
+
+@media screen and (max-width: 1300px) {
+    .descripcion {
+        font-size: 15px;
+    }
+
+    .contenedor-comp h3 {
+        font-size: 25px;
+    }
+    
+    #tarjeta {
+        height: 310px;
+    }
+
+    #informacion {
+        padding: 20px 10px 20px 35px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    #tarjeta {
+        height: 330px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .descripcion {
+        font-size: 14px;
+    }
+    
+    #tarjeta {
+        height: 330px;
+    }
+}
+
+
+
+/* Width 800px*/
+
+@media screen and (max-width: 800px) {
+
+    #tarjeta {
+        height: 370px;
+    }
+
+    .descripcion {
+        font-size: 12px;
+    }
+    
+     /* materias */
+     .c-requisitos .requisitos1 .p-req p {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .contenedor-comp h3 {
+        font-size: 30px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    .descripcion {
+        font-size: 15px;
+    }
+    
+    #tarjeta {
+        background-color: #cfdbeb;
+        color: #002957;
+        height: 377px;
+    }
+    
+    .tituloCursos {
+        background-color: #002957;
+        color: #fff;
+    }
+    
+    .imgCursos {
+        width: 100%;
+    }
+    
+    #informacion {
+        padding: 30px 20px 30px 40px;
+    }
+}
+
+/* Width 700px*/
+
+@media screen and (max-width: 700px) {
+
+    .descripcion, .fechaIn, .fechaFin {
+        font-size: 13px;
+    }
+
+    #tarjeta {
+        height: 330px;
+    }
+    
+ 
+    /* materias */
+    .materias {
+        margin-top: 20%;
+    }
+    .materias .materias1 {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .materias .materias2 {
+       width: 95%;
+       display: flex;
+       flex-direction: column;
+   }
+
+   .materias1 .progra, .matematica {
+       width: 95%;
+   }
+
+   .materias2 .ingles, .habilidades {
+       width: 95%;
+   }
+
+   /* requisitos */
+
+   .requisitos1 {
+       width: 95%;;
+       display: flex;
+       flex-direction: column;
+   }
+
+   .c-requisitos .requisitos1 .img-req, .p-req {
+       width: 100%;
+       padding: 2%;    
+   }
+}
+
+@media screen and (max-width: 600px) {
+
+    .tituloCursos h3 {
+        font-size: 18px;
+    }
+
+    #tarjeta {
+        height: 300px;
+    }
+
+}
+
+ @media screen and (max-width: 500px) {
+    .contenedor-c {
+        margin-top: 15%;
+    }
+
+    .tituloCursos h3 {
+        font-size: 17px;
+    }
+
+    #tarjeta {
+        height: 330px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .contenedor-c {
+        margin-top: 17%;
+    }
+
+    .descripcion, .fechaIn, .fechaFin {
+        font-size: 11px;
+    }
+}

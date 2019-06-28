@@ -1,0 +1,423 @@
+@import url("https://fonts.googleapis.com/css?family=Righteous");
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+*{
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*Que son los cds*/
+.contenedor-m {
+    width: 90%;
+    margin:0 auto;
+    margin-top: 8%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #002957;
+    display: flex;
+}
+
+.contenedor-m .cds {  
+    width: 50%;
+    padding-left: 2.5%;
+    padding-right: 2.5%
+}
+
+.contenedor-m .myv {
+    width: 50%;
+    padding-left: 2.5%;
+    padding-right: 2.5%
+}
+
+.contenedor-m h2 {
+   text-transform: uppercase;
+}
+
+.contenedor-m p {
+    text-align: justify;
+}
+
+#iconos1 {
+    font-size: 40px;
+    color:#003B7D;
+    float: left;
+}
+
+#iconos2 {
+    color:#003B7D;
+    float: left;
+}
+
+/*nuestro equipo*/
+
+.contenedor-m2 {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #002957;
+}
+
+.contenedor-m2 .nuestroEquipo {
+    display: flex;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+
+.contenedor-m2 h3 {
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.contenedor-m2 .nuestroEquipo .equipo {
+    text-align: justify;
+    width: 30%;
+}
+
+.contenedor-m2 .nuestroEquipo .imgEquipo {
+    width: 70%;
+}
+
+.contenedor-m2 .nuestroEquipo .imgEquipo img {
+    width: 95%;
+}
+
+/*linea informativa*/
+.contenedor-m3 {
+    width: 100%;
+    height: 25%;
+    font-family: 'Poppins', sans-serif;
+    color: #000000; 
+}
+
+.contenedor-m3 h3 {
+    width: 100%;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center; 
+    color: #002957;
+}
+
+.contenedor-m3 .lineaInfo {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.contenedor-m3 .lineaInfo .li-1, .li-2, .li-3, .li-4 {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 100px;
+}
+
+.contenedor-m3 .lineaInfo .li-1 {
+    background-color: #3f888f;
+}
+
+.contenedor-m3 .lineaInfo .li-2 {
+    background-color: #1b5583; 
+}
+
+.contenedor-m3 .lineaInfo .li-3 {
+    background-color: #1d334a; 
+}
+
+.contenedor-m3 .lineaInfo .li-4 {
+    background-color: #256d7b; 
+}
+
+#iconL1, #iconL2, #iconL4  {
+    margin-left: 26%;
+    margin-top: 25%;
+    font-size: 40px;
+    color: #ffffff;
+}
+
+#iconL3 {
+    margin-left: 30%;
+    margin-top: 28%;
+    font-size: 40px;
+    color: #ffffff;
+}
+
+
+.contenedor-m3 .info-t {
+    display: flex;
+    color: #002957;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.contenedor-m3 .info-t .texto1 {
+    width: 15%;
+    margin-left: 5%;
+    text-align: center;
+}
+
+.contenedor-m3 .info-t .texto2 {
+    width: 15%;
+    margin-left: 10%;
+    text-align: center;
+}
+
+.contenedor-m3 .info-t .texto3 {
+    width: 15%;
+    margin-left: 10%;
+    text-align: center;
+}
+
+.contenedor-m3 .info-t .texto4 {
+    width: 15%;
+    margin-left: 10%;
+    text-align: center;
+}
+
+ footer{
+    margin-top:20px;
+    }
+    
+/*Diseño responsive*/
+
+
+/* Width 1000px*/
+
+@media screen and (max-width:1000px) {
+
+
+    .contenedor-m {
+        margin: 0 auto;
+        margin-top: 20%;
+        font-size: 14px;
+        width: 95%;
+        font-size: 14px;
+        padding-top: 0%;
+    }
+
+    .contenedor-m2 {
+        margin: 0 auto;
+        margin-top: 10%;
+        font-size: 13px;
+        width: 95%;
+        font-size: 14px;
+        padding-top: 0%;
+    }
+
+} 
+
+/* Width 900px*/
+
+@media screen and (max-width:900px) {
+
+
+    .contenedor-m2 h3 {
+        font-size: 25px;
+    }
+
+    .contenedor-m2 .nuestroEquipo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor-m2 .nuestroEquipo .equipo {
+        text-align: justify;
+        width: 100%;
+    }
+    
+    .contenedor-m2 .nuestroEquipo .imgEquipo {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .contenedor-m2 .nuestroEquipo .imgEquipo img {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+} 
+
+/* Width 800px*/
+
+@media screen and (max-width: 800px) {
+    
+    /*Que son los cds?*/
+
+    .contenedor-m {
+        margin: 0 auto;
+        margin-top: 15%;
+        font-size: 14px;
+        width: 95%;
+    }
+
+    #icono1 {
+        font-size: 30px;
+    }
+
+    /*Nuestro equipo*/
+
+    .contenedor-m2 {  
+        font-size: 13px;
+    }
+
+    .contenedor-m2 h3 {
+        font-size: 20px;
+    }
+
+    /*Linea informativa*/
+
+    .contenedor-m3 .linea1 {
+        font-size: 22px;
+    }
+    
+    .contenedor-m3 .linea1 p {
+        font-size: 15px;
+    }
+
+    /*linea informativa*/
+
+    .contenedor-m3 h3 {
+        font-size:25px;
+    }
+
+    .contenedor-m3 .info-t p {
+        font-size: 15px;
+    }
+}
+
+/* Width 700px*/
+
+@media screen and (max-width: 700px) {
+
+     /*Que son los cds*/
+     .contenedor-m {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor-m .cds {  
+        width: 100%;
+     
+    }
+    
+    .contenedor-m .myv {
+        width: 100%;
+    }
+
+    /*Nuestro equipo*/
+
+    .contenedor-m2 {
+       width: 95%;
+        margin: 0 auto;
+        
+    }
+    
+    .contenedor-m2 .nuestroEquipo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor-m3 .info-t .texto1 p {
+        font-size: 14px;
+    }
+
+    #parrafoT {
+        font-size: 14px;
+    }
+    
+ } 
+
+
+ @media screen and (max-width: 600px) {
+
+     .contenedor-m {
+        font-size: 13px;
+        margin-top: 20%;
+    }
+
+    #parrafoT {
+        font-size: 13px;
+    }
+ } 
+
+ @media screen and (max-width: 500px) {
+     
+     .contenedor-m {
+        font-size: 12px;
+        margin-top: 20%;
+    }
+
+    .contenedor-m h2 {
+        font-size: 15px;
+     }
+
+     #icono1 {
+        font-size: 25px;
+    }
+
+    .contenedor-m2 {
+        font-size: 12px;
+    }
+
+    .contenedor-m2 .nuestroEquipo .imgEquipo {
+        width: 100%;
+    }
+
+    .contenedor-m2 .nuestroEquipo .imgEquipo img {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .contenedor-m3 .lineaInfo .li-1, .li-2, .li-3, .li-4 {
+        width: 70px;
+        height: 70px;
+        border-radius: 70px;
+    }
+    
+    #iconL1, #iconL2, #iconL4  {
+        font-size: 30px;
+    }
+    
+    #iconL3 {
+        font-size: 30px;
+    }
+
+    #parrafoT {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .contenedor-m {
+        font-size: 12px;
+        margin-top: 25%;
+    }
+
+    .contenedor-m3 .lineaInfo .li-1, .li-2, .li-3, .li-4 {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+    }
+    
+    #iconL1, #iconL2, #iconL4  {
+        font-size: 20px;
+    }
+    
+    #iconL3 {
+        font-size: 20px;
+    }
+
+    #parrafoT {
+        font-size: 10px;
+    }
+}
