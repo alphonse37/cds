@@ -5,9 +5,11 @@ new Vue ({
 
     data: function() {
         return {
-            convocatorias: []
+            convocatorias: [],
+            fecha_inicio: ''
         }
     },
+
 
     methods: {
        fechas: function(fecha){	
@@ -16,9 +18,15 @@ new Vue ({
         }
     },
 
+    computed: {
+        buscarFecha() {
+            return this.convocatorias.filter((convocatoria) => { return fechas(convocatoria.fecha_inicio).includes(this.fecha_inicio)});
+        }
+    },
+
 
     mounted() {
-        axios.get("http://192.168.22.109:3000/eventos")
+        axios.get("http://192.168.22.147/CDS_BACKEND/Api/")
         .then(res => {
             this.convocatorias = res.data;
             console.log(res.data);
@@ -28,3 +36,5 @@ new Vue ({
         })
     }
     });
+
+    // https://www.youtube.com/watch?v=QP6n_X4aVMY
