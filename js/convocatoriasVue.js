@@ -20,7 +20,7 @@ new Vue ({
 
     computed: {
         buscarFecha() {
-            return this.convocatorias.filter((convocatoria) => { return fechas(convocatoria.fecha_inicio).includes(this.fecha_inicio)});
+            return this.convocatorias.filter((convocatoria) => { return convocatoria.fecha_inicio.includes(this.fecha_inicio)});
         }
     },
 

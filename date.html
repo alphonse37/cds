@@ -141,7 +141,7 @@
                     </thead>
                     
                     <tbody>
-                        <tr v-for="convocatoria in buscarFecha" v-bind:key="convocatoria.id_eventos">
+                        <tr v-for="convocatoria in convocatorias" v-bind:key="convocatoria.id_eventos">
                             <td>{{convocatoria.eventos}}</td>
                             <td>{{convocatoria.descripcion}}</td>
                             <td>{{fechas(convocatoria.fecha_inicio)}}</td>
