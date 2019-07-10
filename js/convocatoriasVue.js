@@ -6,7 +6,7 @@ new Vue ({
     data: function() {
         return {
             convocatorias: [],
-            fecha_inicio: ''
+            // fecha_inicio: ''
         }
     },
 
@@ -18,11 +18,11 @@ new Vue ({
         }
     },
 
-    computed: {
-        buscarFecha() {
-            return this.convocatorias.filter((convocatoria) => { return convocatoria.fecha_inicio.includes(this.fecha_inicio)});
-        }
-    },
+    // computed: {
+    //     buscarFecha() {
+    //         return this.convocatorias.filter((convocatoria) => { return convocatoria.fecha_inicio.includes(this.fecha_inicio)});
+    //     }
+    // },
 
 
     mounted() {
