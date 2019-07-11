@@ -6,7 +6,7 @@ new Vue ({
     data: function() {
         return {
             convocatorias: [],
-            // fecha_inicio: ''
+            buscarFecha: null,
         }
     },
 
@@ -18,11 +18,24 @@ new Vue ({
         }
     },
 
-    // computed: {
-    //     buscarFecha() {
-    //         return this.convocatorias.filter((convocatoria) => { return convocatoria.fecha_inicio.includes(this.fecha_inicio)});
-    //     }
-    // },
+    computed: {
+        filtrarFecha() {
+            var vm = this;
+            var buscarFecha = vm.buscarFecha;
+           
+            return _.filter(vm.data.convocatorias, (function(data) {
+                if (_.isNull(buscarFecha)) {
+                    return true
+                } else {
+                    var fecha = data.fecha;
+                    return (fecha == buscarFecha);
+                }
+            }))
+        }
+        // buscarFecha() {
+        //     return this.convocatorias.filter((convocatoria) => { return convocatoria.fecha_inicio.includes(this.fecha_inicio)});
+        // }
+    },
 
 
     mounted() {

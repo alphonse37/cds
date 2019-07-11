@@ -25,6 +25,7 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.0.js"></script>
+    <script src="https://underscorejs.org/underscore.js"></script>
 	<script src="./js/carga.js"></script>
     <script src="./js/noticias.js"></script>
     <script src="./js/navbarFooter.js"></script>
@@ -120,10 +121,11 @@
                             </script>
                         </div>
                     </div> -->
-                    <!-- <div class="col-6">
+                    <div class="col-6">
                         <input type="date" name="" id="" class="form-control" v-model="buscarFecha">
+                        
 
-                    </div> -->
+                    </div>
             <div class="container">
                 <h5>Próximos eventos programados por los CDS</h5>
 
@@ -141,7 +143,7 @@
                     </thead>
                     
                     <tbody>
-                        <tr v-for="convocatoria in convocatorias" v-bind:key="convocatoria.id_eventos">
+                        <tr v-for="convocatoria in convocatorias" v-bind:key="convocatoria.id_eventos" onchange="filtrarFecha()">
                             <td>{{convocatoria.eventos}}</td>
                             <td>{{convocatoria.descripcion}}</td>
                             <td>{{fechas(convocatoria.fecha_inicio)}}</td>
