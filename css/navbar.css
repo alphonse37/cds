@@ -22,12 +22,14 @@
 } 
 
 .barra {
+    width: 100vw;
     color: #ffffff;
     font-family: 'Righteous', cursive;
     font-weight: 500;
     font-size: 15px;
     text-transform: uppercase;
     display: flex;
+    
 }
 
 .menu {
@@ -42,8 +44,8 @@
     display: flex;
 }
 
-.nav {
-    width: 100vw;
+nav {
+    width: 100%;
 }
 
 .menu a {
@@ -402,7 +404,7 @@
     .menu {
         width: 65%;
         display: none;
-        left: 0%;
+        left: 0;
         position: fixed;
         height: 100%;
         top: 9%;
@@ -465,6 +467,10 @@
      .informacion, #icono2, .informaciontitle {
          margin-left: 30%;
      }
+
+     .ir-arriba {
+        right:10%;
+    }
      
 }
 
