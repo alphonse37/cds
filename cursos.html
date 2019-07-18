@@ -94,36 +94,13 @@
 			<div id="app">
 				<div class="row">
 					<div class="col-sm-12 col-md-6 col-lg-6" v-for="curso in cursos" v-bind:key="curso.id_curso">
-						<div class="" id="tarjeta">
-							<div class="card" style="width: 18rem;">
-								<img :src="`data:image/jpg;base64,${curso.imagen}`" alt="imagen de cursos" class="imgCursos" width="100%">
-								<div class="card-body">
-									<p>{{curso.titulo}}</p>
-									<p class="card-text">{{curso.descripcion}}}</p>
-								</div>
+						<div class="card mb-3">
+							<img :src="`data:image/jpg;base64,${curso.imagen}`" alt="imagen de cursos" class="imgCursos" width="100%">
+							<div class="card-body">
+								<h5 class="card-title text-center tituloCursos">{{curso.titulo}}</h5>
+								<p class="card-text text-center">{{curso.descripcion}}</p>
 							</div>
-							<!-- <div class="row">
-								<div class="col-6" id="informacion">
-									<div class="tituloCursos">
-										<h3>{{curso.titulo}}</h3>
-									</div>
-									<br>
-									<div>
-										<p class="descripcion text-center">Descripción:</p>
-										<p class="descripcion text-center">{{curso.descripcion}}</p>
-									</div>
-								</div>
-	
-								<div class="col-6 imagenCursos">
-									<img :src="`data:image/jpg;base64,${curso.imagen}`" alt="imagen de cursos" class="imgCursos">
-								</div>
-
-							</div> -->
 						</div>
-						
-						<br>
-						<br>
-						<br>
 					</div>
 				</div>
 			</div> 

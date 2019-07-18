@@ -33,6 +33,12 @@
     background-color:#1b5583;
 }
 
+.tituloCursos {
+    background-color: #002957;
+    color: #fff;
+    padding: 20px;
+}
+
 .intro {
     width: 80%;
     margin-left: auto;
@@ -44,17 +50,6 @@
 /* cursos tarjetas */
 .descripcion, .fechaIn, .fechaFin {
     font-size: 12px;
-}
-
-#tarjeta {
-    background-color: #cfdbeb;
-    color: #002957;
-    height: 377px;
-}
-
-.tituloCursos {
-    background-color: #002957;
-    color: #fff;
 }
 
 .imgCursos {
