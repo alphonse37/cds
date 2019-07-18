@@ -66,12 +66,12 @@
     font-size: 15px;
 }
 
-#tarjeta {
+/* #tarjeta {
     background-color: #cfdbeb;
     color: #002957;
     height: 377px;
-    /* box-shadow: 5px 8px 15px gray; */
-}
+    box-shadow: 5px 8px 15px gray;
+} */
 
 .tituloCursos {
     background-color: #002957;

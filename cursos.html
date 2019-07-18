@@ -93,9 +93,16 @@
         <section class="contenedor-comp">
 			<div id="app">
 				<div class="row">
-					<div class="col-sm-12 col-md-6 col-lg-6" v-for="curso in cursos" v-bind:key="curso.id_curso" >
+					<div class="col-sm-12 col-md-6 col-lg-6" v-for="curso in cursos" v-bind:key="curso.id_curso">
 						<div class="" id="tarjeta">
-							<div class="row">
+							<div class="card" style="width: 18rem;">
+								<img :src="`data:image/jpg;base64,${curso.imagen}`" alt="imagen de cursos" class="imgCursos" width="100%">
+								<div class="card-body">
+									<p>{{curso.titulo}}</p>
+									<p class="card-text">{{curso.descripcion}}}</p>
+								</div>
+							</div>
+							<!-- <div class="row">
 								<div class="col-6" id="informacion">
 									<div class="tituloCursos">
 										<h3>{{curso.titulo}}</h3>
@@ -111,7 +118,7 @@
 									<img :src="`data:image/jpg;base64,${curso.imagen}`" alt="imagen de cursos" class="imgCursos">
 								</div>
 
-							</div>
+							</div> -->
 						</div>
 						
 						<br>

@@ -10,7 +10,7 @@ var dos = new Vue ({
     },
 
     mounted() {
-        axios.get("http://192.168.22.147/CDS_BACKEND/Api/")
+        axios.get("https://cdssa.000webhostapp.com/ApiCursos/")
         .then(res => {
             this.cursos = res.data;
             console.log(res.data);
