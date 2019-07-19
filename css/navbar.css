@@ -22,7 +22,7 @@
 } 
 
 .barra {
-    width: 100vw;
+    width: 100%;
     color: #ffffff;
     font-family: 'Righteous', cursive;
     font-weight: 500;
@@ -33,7 +33,7 @@
 }
 
 .menu {
-    width: 60vw;
+    width: 60%;
     background-color: #003B7D;
     padding: 30px;
     transition: background .2s linear;
@@ -56,13 +56,13 @@ nav {
 
 .logo {
     background-color: #003B7D;
-    width: 8vw;
+    width: 8%;
 }
 
 .texto {
     background-color: #003B7D;
     padding-top: 25px;
-    width: 32vw;
+    width: 32%;
 }
 
 .texto h1 {
@@ -233,7 +233,7 @@ nav {
 	color:#fff;
 	cursor:pointer;
 	position: fixed;
-	bottom:20px;
+	bottom:80px;
     right:20px;
     z-index: 20;
 }
@@ -362,7 +362,7 @@ nav {
         background: #003B7D;
         z-index: 100;
         font-size: 30px;
-        width: 8vw;
+        width: 8%;
      }
  
     .boton-menu {
@@ -378,7 +378,7 @@ nav {
     }
 
     .logo {
-        width: 12vw;
+        width: 12%;
     }
 
     .logo2{
@@ -390,7 +390,7 @@ nav {
     .texto {
         background-color: #003B7D;
         padding-top: 15px;
-        width: 80vw;
+        width: 80%;
         display: block;
     }
 
@@ -405,9 +405,9 @@ nav {
         width: 65%;
         display: none;
         left: 0;
-        position: fixed;
-        height: 100%;
-        top: 9%;
+        position: absolute;
+        height: 100vh;
+        top: 100%;
         background-color: rgba(0, 58, 125, 0.863);
     }
 
@@ -420,7 +420,7 @@ nav {
     .nav {
         display: flex;
         flex-direction: column;
-        margin-left: 10%;
+        /* margin-left: 10%; */
     }
 
     #menuExp {
@@ -436,6 +436,8 @@ nav {
 }
 
 @media screen and (max-width: 800px) {
+   
+
     #icono3, #icono4 {
         font-size: 20px;
     }
@@ -444,19 +446,20 @@ nav {
         display: block;
      }
     
-    .contenedorf h3 {
+    /* .contenedorf h3 {
         font-size: 20px;
-     }
+     } */
     
     .f-contacto {
-        width: 100%;
+        width: 80%;
         margin: 0 auto;
         margin-bottom: 5%;
         padding-left: 10%;
+     
      }
     
     .f-buscanos {
-        width: 100%;
+        width: 80%;
         margin-bottom: 5%;
      }
 
@@ -489,9 +492,9 @@ nav {
         font-size: 20px;
     }
 
-    .menu {
+    /* .menu {
         top: 7%;
-    }
+    } */
 
     .texto {
         padding-top: 15px;
@@ -535,9 +538,9 @@ nav {
         margin-left: 13px;
     }
 
-    .menu {
+    /* .menu {
         top: 7%;
-    }
+    } */
 
     .texto h1{
         font-size: 12px;
