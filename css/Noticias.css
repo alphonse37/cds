@@ -137,5 +137,18 @@
     }
 }
 
+@media screen and (max-width: 400px) {
+    .tabla {
+        font-size: 11px;
+    }
+
+    
+#imagen img {
+    width: 90%;
+    margin-left: 17px;
+}
+}
+
+
 
 
