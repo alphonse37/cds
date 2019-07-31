@@ -6,11 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="icon" type="image" href="./imagenes/logos/logoPequeno.ico">
   <title>Centro de Desarrrollo de Software</title>
+
+  <!-- vue -->
+  <script src="https://vuejs.org/js/vue.min.js"></script>
+    
+  <!-- axios -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   
   <!-- Links CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/navbar.css">
-  <link rel="stylesheet" href="./css/estilogaleria.css">
+  <link rel="stylesheet" href="./css/galeria.css">
   <link rel="stylesheet" href="./css/carga.css">
 
   <!-- Links JS -->
@@ -42,7 +48,7 @@
 					<a href="#" class="boton-menu" id="cerrar"><i class="fas fa-times"></i></a>
 				</div>
 				<div class="logo">
-						<a href="MainCDS.html" class="navbar-brand">
+						<a href="index.html" class="navbar-brand">
 							<img src="./imagenes/logos/logo.png" class="logo2" alt="logo">
 						</a>
 				</div>
@@ -53,7 +59,7 @@
 
 				<div class="menu">
 					<nav class="nav">
-						<a href="MainCDS.html" class="text-white" id="f-item-1"><i class="fas fa-home" id="iconMenu"></i>&nbsp; Inicio</a>
+						<a href="index.html" class="text-white" id="f-item-1"><i class="fas fa-home" id="iconMenu"></i>&nbsp; Inicio</a>
 						<a href="quienessomos.html" class="text-white" id="f-item-2"><i class="fas fa-briefcase" id="iconMenu"></i>&nbsp; Quienes somos</a>
 						<a href="cursos.html" class="text-white" id="f-item-3"><i class="fas fa-graduation-cap" id="iconMenu"></i>&nbsp; Nuestros cursos</a>
 						<a href="#" class="dropdown-toggle text-white" id="f-item-4" data-toggle="dropdown"><i class="fas fa-school" id="iconMenu"></i>&nbsp; Sedes</a>
@@ -76,13 +82,14 @@
 
 <!--Galeria-->
 
-<div class="gallery">
-  <figure>
-    <img src="./imagenes/galeria/cds01.jpg" width="600px" alt="HTML Cohorte 3" />
-    <figcaption class="text-center" id="tamañoTexto">Cohorte 3: HTML</figcaption>
+<div class="gallery" id="galeria">
+  <figure v-for="imagen in galeria" >
+      <img :src="`data:image/jpg;base64,${imagen.imagen}`" alt=""   width="600px">
+    <!-- <img src="./imagenes/galeria/cds01.jpg" width="600px" alt="HTML Cohorte 3" /> -->
+    <!-- <figcaption class="text-center" id="tamañoTexto">Cohorte 3: HTML</figcaption> -->
   </figure>
 
-  <figure>
+  <!-- <figure>
     <img src="./imagenes/galeria/cds02.jpg"  width="600px" alt="Prácticas: curso de HTML" />
     <figcaption class="text-center" id="tamañoTexto">Prácticas: curso de HTML</figcaption>
   </figure>
@@ -225,7 +232,7 @@
   <figure>
     <img src="./imagenes/galeria/cds30.jpg" width="600px" alt="Instructor HTML, Santa Ana"/>
     <figcaption class="text-center" id="tamañoTexto">Cohorte 3 HTML, Santa Ana</figcaption>
-  </figure>
+  </figure> -->
 
 </div>
 
@@ -333,6 +340,8 @@
     <!-- Fin footer -->
 
     <!-- Script de galeria -->
+
+    <script src="js/app.js"></script>
 
     <script >
     popup = {
