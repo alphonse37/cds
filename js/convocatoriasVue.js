@@ -32,4 +32,3 @@ new Vue ({
     }
     });
 
-    // https://www.youtube.com/watch?v=QP6n_X4aVMY

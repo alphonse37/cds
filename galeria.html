@@ -83,162 +83,25 @@
 <!--Galeria-->
 
 <div class="gallery" id="galeria">
-  <figure v-for="imagen in galeria" >
-      <img :src="`data:image/jpg;base64,${imagen.imagen}`" alt=""   width="600px">
-    <!-- <img src="./imagenes/galeria/cds01.jpg" width="600px" alt="HTML Cohorte 3" /> -->
-    <!-- <figcaption class="text-center" id="tamañoTexto">Cohorte 3: HTML</figcaption> -->
-  </figure>
+  <div v-for="(imagen, index) in galeria" >
+      <!-- <img :src="`data:image/jpg;base64,${imagen.imagen}`" alt=""   width="600px"> -->
+      <img class="myImg" :src="`data:image/jpg;base64,${imagen.imagen}`" alt="{{imagen.nombre}}" style="width:500px;" id="esto">
+    <!-- <img src="./imagenes/galeria/cds01.jpg" width="100%" alt="HTML Cohorte 3" /> -->
+    <!-- <p class="text-center" id="tamañoTexto">{{imagen.nombre}}</p> -->
+  </div>
 
-  <!-- <figure>
-    <img src="./imagenes/galeria/cds02.jpg"  width="600px" alt="Prácticas: curso de HTML" />
-    <figcaption class="text-center" id="tamañoTexto">Prácticas: curso de HTML</figcaption>
-  </figure>
-
-  <figure>
-    <img src="./imagenes/galeria/cds03.jpg"  width="600px" alt="Prácticas: curso de C# Xamarin" />
-    <figcaption class="text-center" id="tamañoTexto">Prácticas: curso de C# Xamarin</figcaption>
-  </figure>
-
-  <figure>
-    <img src="./imagenes/galeria/cds04.jpg" width="600px" alt="Curso de HTML, Santa Ana" />
-    <figcaption class="text-center" id="tamañoTexto">Curso de HTML, Santa Ana</figcaption>
-  </figure>
-
-  <figure>
-    <img src="./imagenes/galeria/cds05.jpg" width="600px" alt="Curso de HTML, Nivel 1" />
-    <figcaption class="text-center" id="tamañoTexto">Curso de HTML, Nivel 1</figcaption>
-  </figure>
-
-  <figure>
-    <img src="./imagenes/galeria/cds06.jpg" width="600px" alt="Curso de C# MVC" />
-    <figcaption class="text-center" id="tamañoTexto">Curso de C# MVC</figcaption>
-  </figure>
-
-  <figure>
-    <img src="./imagenes/galeria/cds07.jpg" width="600px" alt="Graduación Cohorte 1 Santa Ana" />
-    <figcaption class="text-center" id="tamañoTexto">Graduación Cohorte 1 Santa Ana</figcaption>
-  </figure>
-
-  <figure>
-    <img src="./imagenes/galeria/cds08.jpg" width="600px" alt="Cohorte 4, PHP" />
-    <figcaption class="text-center" id="tamañoTexto">Cohorte 4, PHP</figcaption>
-  </figure>
-
-  <figure>
-    <img src="./imagenes/galeria/cds09.jpg" width="600px" alt="Cohorte 1, C# MVC" />
-    <figcaption class="text-center" id="tamañoTexto">Cohorte 1, C# MVC</figcaption>
-  </figure>
-
-  <figure>
-    <img src="./imagenes/galeria/cds10.jpg" width="600px" alt="Clase de habilidades blandas" />
-    <figcaption class="text-center" id="tamañoTexto">Clase de habilidades blandas</figcaption>
-  </figure>
-
-  <figure>
-    <img src="./imagenes/galeria/cds11.jpg" width="600px" alt="Clase de habilidades blandas"/>
-    <figcaption class="text-center" id="tamañoTexto">Clase de habilidades blandas</figcaption>
-  </figure>
-
-  <figure>
-    <img src="./imagenes/galeria/cds12.jpg" width="600px" alt="Clase de habilidades blandas"/>
-    <figcaption class="text-center" id="tamañoTexto">Clase de habilidades blandas</figcaption>
-  </figure>
-
-  <figure>
-    <img src="./imagenes/galeria/cds13.jpg" width="600px" alt="Curso de HTML, desarrollo de proyectos" />
-    <figcaption class="text-center" id="tamañoTexto">Desarrollo de proyectos, HTML</figcaption>
-  </figure>
-
-  <figure>
-    <img src="./imagenes/galeria/cds14.jpg"  width="600px" alt="Curso de HTML, desarrollo de proyectos" />
-    <figcaption class="text-center" id="tamañoTexto">Desarrollo de proyectos, C# Xamarin</figcaption>
-  </figure>
-
-  <figure>
-    <img src="./imagenes/galeria/cds15.jpg"  width="600px" alt="Curso de HTML, desarrollo de proyectos" />
-    <figcaption class="text-center" id="tamañoTexto">Desarrollo de proyectos, HTML</figcaption>
-  </figure>
-
-  <figure>
-    <img src="./imagenes/galeria/cds16.jpg" width="600px" alt="Dinámicas en habilidades blandas" />
-    <figcaption class="text-center" id="tamañoTexto">Dinámicas en habilidades blandas</figcaption>
-  </figure>
-
-  <figure>
-    <img src="./imagenes/galeria/cds17.jpg" width="600px" alt="Dinámicas en habilidades blandas" />
-    <figcaption class="text-center" id="tamañoTexto">Dinámicas en habilidades blandas</figcaption>
-  </figure>
-
-  <figure>
-    <img src="./imagenes/galeria/cds18.jpg" width="600px" alt="Dinámicas en habilidades blandas" />
-    <figcaption class="text-center" id="tamañoTexto">Dinámicas en habilidades blandas</figcaption>
-  </figure>
-
-  <figure>
-    <img src="imagenes/galeria/cds19.jpg" width="600px" alt="Desarrollo de proyectos, PHP" />
-    <figcaption class="text-center" id="tamañoTexto">Desarrollo de proyectos, PHP</figcaption>
-  </figure>
-
-  <figure>
-    <img src="imagenes/galeria/cds20.jpg" width="600px" alt="Desarrollo de proyectos, PHP" />
-    <figcaption class="text-center" id="tamañoTexto">Desarrollo de proyectos, C# Xamarin</figcaption>
-  </figure>
-
-  <figure>
-    <img src="imagenes/galeria/cds21.jpg" width="600px" alt="Clase de desarrollo de pruebas" />
-    <figcaption class="text-center" id="tamañoTexto">Clase de desarrollo de pruebas</figcaption>
-  </figure>
-
-  <figure>
-    <img src="./imagenes/galeria/cds22.jpg" width="600px" alt="Desarrollo de proyectos, PHP" />
-    <figcaption class="text-center" id="tamañoTexto">Desarrollo de proyectos, PHP</figcaption>
-  </figure>
-
-  <figure>
-    <img src="./imagenes/galeria/cds23.jpg" width="600px" alt="Desarrollo de proyectos, PHP"/>
-    <figcaption class="text-center" id="tamañoTexto">Desarrollo de proyectos, PHP</figcaption>
-  </figure>
-
-  <figure>
-    <img src="./imagenes/galeria/cds24.jpg" width="600px" alt="Cohorte 4 PHP, Santa Ana"/>
-    <figcaption class="text-center" id="tamañoTexto">Cohorte 4 PHP, Santa Ana</figcaption>
-  </figure>
-
-  <figure>
-    <img src="./imagenes/galeria/cds25.jpg" width="600px" alt="Cohorte 3 HTML, Santa Ana" />
-    <figcaption class="text-center" id="tamañoTexto">Cohorte 3 HTML, Santa Ana</figcaption>
-  </figure>
-
-  <figure>
-    <img src="./imagenes/galeria/cds26.jpg" width="600px" alt="Desarrollo de proyectos, PHP"/>
-    <figcaption class="text-center" id="tamañoTexto">Desarrollo de proyectos, PHP</figcaption>
-  </figure>
-
-  <figure>
-    <img src="./imagenes/galeria/cds27.jpg" width="600px" alt="Cohorte 3 HTML, Santa Ana"/>
-    <figcaption class="text-center" id="tamañoTexto">Cohorte 3 HTML, Santa Ana</figcaption>
-  </figure>
-
-  <figure>
-    <img src="./imagenes/galeria/cds28.jpg" width="600px" alt="Cohorte 1 C# MVC, Santa Ana" />
-    <figcaption class="text-center" id="tamañoTexto">Cohorte 1 C# MVC, Santa Ana</figcaption>
-  </figure>
-
-  <figure>
-    <img src="./imagenes/galeria/cds29.jpg" width="600px" alt="Desarrollo de proyectos, PHP"/>
-    <figcaption class="text-center" id="tamañoTexto">Desarrollo de proyectos, PHP</figcaption>
-  </figure>
-
-  <figure>
-    <img src="./imagenes/galeria/cds30.jpg" width="600px" alt="Instructor HTML, Santa Ana"/>
-    <figcaption class="text-center" id="tamañoTexto">Cohorte 3 HTML, Santa Ana</figcaption>
-  </figure> -->
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
 
 </div>
 
 <!-- Icono para cerrar imagenes -->
 
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none;">
+<!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none;">
   <symbol id="close" viewBox="0 0 18 18">
     <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M9,0.493C4.302,0.493,0.493,4.302,0.493,9S4.302,17.507,9,17.507
 			S17.507,13.698,17.507,9S13.698,0.493,9,0.493z M12.491,11.491c0.292,0.296,0.292,0.773,0,1.068c-0.293,0.295-0.767,0.295-1.059,0
@@ -246,7 +109,7 @@
 			c-0.292-0.295-0.292-0.773,0-1.068c0.293-0.295,0.766-0.295,1.059,0l2.504,2.528l2.505-2.528c0.292-0.295,0.767-0.295,1.059,0
 			s0.292,0.773,0,1.068l-2.505,2.528L12.491,11.491z"/>
   </symbol>
-</svg>
+</svg> -->
 
 <!-- Fin galeria -->
 
@@ -344,41 +207,62 @@
     <script src="js/app.js"></script>
 
     <script >
-    popup = {
-        init: function(){
-          $('figure').click(function(){
-            popup.open($(this));
-          });
+    // popup = {
+    //     init: function(){
+    //       $('.figure').click(function(){
+    //         popup.open($(this));
+    //       });
           
-          $(document).on('click', '.popup img', function(){
-            return false;
-          }).on('click', '.popup', function(){
-            popup.close();
-          })
-        },
-        open: function($figure) {
-          $('.gallery').addClass('pop');
-          $popup = $('<div class="popup" />').appendTo($('body'));
-          $fig = $figure.clone().appendTo($('.popup'));
-          $bg = $('<div class="bg" />').appendTo($('.popup'));
-          $close = $('<div class="close"><svg><use xlink:href="#close"></use></svg></div>').appendTo($fig);
-          $shadow = $('<div class="shadow" />').appendTo($fig);
-          src = $('img', $fig).attr('src');
-          $shadow.css({backgroundImage: 'url(' + src + ')'});
-          $bg.css({backgroundImage: 'url(' + src + ')'});
-          setTimeout(function(){
-            $('.popup').addClass('pop');
-          }, 10);
-        },
-        close: function(){
-          $('.gallery, .popup').removeClass('pop');
-          setTimeout(function(){
-            $('.popup').remove()
-          }, 100);
-        }
-      }
+    //       $(document).on('click', '.popup img', function(){
+    //         return false;
+    //       }).on('click', '.popup', function(){
+    //         popup.close();
+    //       })
+    //     },
+    //     open: function($figure) {
+    //       $('.gallery').addClass('pop');
+    //       $popup = $('<div class="popup" />').appendTo($('body'));
+    //       $fig = $figure.clone().appendTo($('.popup'));
+    //       $bg = $('<div class="bg" />').appendTo($('.popup'));
+    //       $close = $('<div class="close"><svg><use xlink:href="#close"></use></svg></div>').appendTo($fig);
+    //       $shadow = $('<div class="shadow" />').appendTo($fig);
+    //       src = $('img', $fig).attr(':src');
+    //       $shadow.css({backgroundImage: 'url(' + src + ')'});
+    //       $bg.css({backgroundImage: 'url(' + src + ')'});
+    //       setTimeout(function(){
+    //         $('.popup').addClass('pop');
+    //       }, 10);
+    //     },
+    //     close: function(){
+    //       $('.gallery, .popup').removeClass('pop');
+    //       setTimeout(function(){
+    //         $('.popup').remove()
+    //       }, 100);
+    //     }
+    //   }
       
-      popup.init()
+    //   popup.init()
+
+    // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementsByClassName("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
       
       </script>
 </body>

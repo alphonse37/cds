@@ -1,4 +1,4 @@
-// Consumir api para convocatorias
+// Consumir api para galeria
 
 new Vue ({
     el: '#galeria',
@@ -10,7 +10,7 @@ new Vue ({
     },
 
     mounted() {
-        axios.get("https://pmpu.000webhostapp.com/api/categoria/")
+        axios.get("https://cdssa.000webhostapp.com/ApiImagenes/?tipo=1")
         .then(res => {
             this.galeria = res.data;
             console.log(res.data);
@@ -21,4 +21,3 @@ new Vue ({
     }
     });
 
-    // https://www.youtube.com/watch?v=QP6n_X4aVMY
