@@ -82,34 +82,46 @@
 
 <!--Galeria-->
 
-<div class="gallery" id="galeria">
-  <div v-for="(imagen, index) in galeria" >
-      <!-- <img :src="`data:image/jpg;base64,${imagen.imagen}`" alt=""   width="600px"> -->
-      <img class="myImg" :src="`data:image/jpg;base64,${imagen.imagen}`" alt="{{imagen.nombre}}" style="width:500px;" id="esto">
-    <!-- <img src="./imagenes/galeria/cds01.jpg" width="100%" alt="HTML Cohorte 3" /> -->
-    <!-- <p class="text-center" id="tamañoTexto">{{imagen.nombre}}</p> -->
+<div id="galeria" class="gallery">
+  <div class="row">
+    <div class="col-xs-12 col-md-6 col-lg-4"  v-for="imagen in galeria" :key="imagen.id">
+        <expandable-image
+          class="image"
+          :src="`data:image/jpg;base64,${imagen.imagen}`"
+          width="100% "
+        ></expandable-image>
+        
+    </div>
   </div>
-
-  <!-- The Modal -->
-  <div id="myModal" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="img01">
-    <div id="caption"></div>
-  </div>
-
 </div>
-
-<!-- Icono para cerrar imagenes -->
-
-<!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none;">
-  <symbol id="close" viewBox="0 0 18 18">
-    <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M9,0.493C4.302,0.493,0.493,4.302,0.493,9S4.302,17.507,9,17.507
-			S17.507,13.698,17.507,9S13.698,0.493,9,0.493z M12.491,11.491c0.292,0.296,0.292,0.773,0,1.068c-0.293,0.295-0.767,0.295-1.059,0
-			l-2.435-2.457L6.564,12.56c-0.292,0.295-0.766,0.295-1.058,0c-0.292-0.295-0.292-0.772,0-1.068L7.94,9.035L5.435,6.507
-			c-0.292-0.295-0.292-0.773,0-1.068c0.293-0.295,0.766-0.295,1.059,0l2.504,2.528l2.505-2.528c0.292-0.295,0.767-0.295,1.059,0
-			s0.292,0.773,0,1.068l-2.505,2.528L12.491,11.491z"/>
-  </symbol>
-</svg> -->
+      
+  <script type="text/x-template" id="expandable-image">
+    <div
+      class="expandable-image"
+      :class="{
+        expanded: expanded
+      }"
+      @click="expanded = true"
+    >
+      <i
+        v-if="expanded"
+        class="close-button"
+      >
+        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+          <path fill="#666666" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+        </svg>
+      </i>
+      <i
+        v-if="!expanded"
+        class="expand-button"
+      >
+        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+          <path fill="#000000" d="M10,21V19H6.41L10.91,14.5L9.5,13.09L5,17.59V14H3V21H10M14.5,10.91L19,6.41V10H21V3H14V5H17.59L13.09,9.5L14.5,10.91Z" />
+        </svg>
+      </i>
+      <img v-bind="$attrs"/>
+    </div>
+  </script>
 
 <!-- Fin galeria -->
 
@@ -199,71 +211,9 @@
         </section>
         
     </footer>
-
     <!-- Fin footer -->
 
-    <!-- Script de galeria -->
-
-    <script src="js/app.js"></script>
-
-    <script >
-    // popup = {
-    //     init: function(){
-    //       $('.figure').click(function(){
-    //         popup.open($(this));
-    //       });
-          
-    //       $(document).on('click', '.popup img', function(){
-    //         return false;
-    //       }).on('click', '.popup', function(){
-    //         popup.close();
-    //       })
-    //     },
-    //     open: function($figure) {
-    //       $('.gallery').addClass('pop');
-    //       $popup = $('<div class="popup" />').appendTo($('body'));
-    //       $fig = $figure.clone().appendTo($('.popup'));
-    //       $bg = $('<div class="bg" />').appendTo($('.popup'));
-    //       $close = $('<div class="close"><svg><use xlink:href="#close"></use></svg></div>').appendTo($fig);
-    //       $shadow = $('<div class="shadow" />').appendTo($fig);
-    //       src = $('img', $fig).attr(':src');
-    //       $shadow.css({backgroundImage: 'url(' + src + ')'});
-    //       $bg.css({backgroundImage: 'url(' + src + ')'});
-    //       setTimeout(function(){
-    //         $('.popup').addClass('pop');
-    //       }, 10);
-    //     },
-    //     close: function(){
-    //       $('.gallery, .popup').removeClass('pop');
-    //       setTimeout(function(){
-    //         $('.popup').remove()
-    //       }, 100);
-    //     }
-    //   }
-      
-    //   popup.init()
-
-    // Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementsByClassName("myImg");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-  modal.style.display = "none";
-}
-      
-      </script>
+    <!-- app para ejecutar el componente creado con vue -->
+    <script src="js/appGaleria.js"></script>
 </body>
 </html>

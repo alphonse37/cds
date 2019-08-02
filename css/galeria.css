@@ -13,308 +13,89 @@
 
 /*Galeria*/
 
-/* img {
-  display: block;
-}*/
-
 .gallery {
+  margin-bottom: 5%;
+}
+
+#galeria {
   margin-top: 10%;
-  /* position: relative;
-  z-index: 2;
-  padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out; */
-}
-/*
-.gallery.pop {
-  -webkit-filter: blur(10px);
-          filter: blur(10px);
-}
-
-.gallery .figure {
-  -ms-flex-preferred-size: 33.333%;
-      flex-basis: 33.333%;
-  padding: 10px;
-  overflow: hidden;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.gallery .figure img {
   width: 100%;
-  border-radius: 10px;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  position: relative;
 }
-.gallery .figure figcaption {
-  display: none;
+  
+.image {
+  width: 100%;
+}
+  
+.expandable-image {
+  position: relative;
+  transition: 0.25s opacity;
+  cursor: zoom-in;
 }
 
-.popup {
+body > .expandable-image.expanded {
   position: fixed;
-  z-index: 2;
-  top: 8%;
+  z-index: 999999;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.75);
+  background: black;
+  display: flex;
+  align-items: center;
   opacity: 0;
-  -webkit-transition: opacity .5s ease-in-out .2s;
-  transition: opacity .5s ease-in-out .2s;
-}
-.popup.pop {
-  opacity: 1;
-  -webkit-transition: opacity .2s ease-in-out 0s;
-  transition: opacity .2s ease-in-out 0s;
-}
-.popup.pop .figure {
-  margin-top: 0;
-  opacity: 1;
-}
-.popup .figure {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -webkit-transform-origin: 0 0;
-          transform-origin: 0 0;
-  margin-top: 30px;
-  opacity: 0;
-  -webkit-animation: poppy 500ms linear both;
-          animation: poppy 500ms linear both;
+  padding-bottom: 0 !important;
+  cursor: default;
 }
 
-.popup .figure img {
+body > .expandable-image.expanded > img {
   width: 100%;
-  margin: 0 auto;
-  position: relative;
-  z-index: 2;
-  border-radius: 15px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 6px 30px rgba(0, 0, 0, 0.4);
+  max-height: 100%;
+  object-fit: contain;
+  /* margin: 0 auto; */
 }
 
-.popup .figure figcaption {
-  position: absolute;
-  bottom: 50px;
-  background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.78));
-  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.78));
-  z-index: 2;
-  width: 98%;
-  border-radius: 0 0 15px 15px;
-  padding: 100px 20px 20px 20px;
-  color: #fff;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 32px;
+body > .expandable-image.expanded > .close-button {
+  display: block;
 }
 
-.popup .figure .shadow {
-  position: relative;
-  z-index: 1;
-  top: -15px;
-  margin: 0 auto;
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 50px;
-  opacity: .6;
-  -webkit-filter: blur(15px) contrast(2);
-          filter: blur(15px) contrast(2);
-}
-.popup .close {
-  position: absolute;
-  z-index: 3;
+.close-button {
+  position: fixed;
   top: 10px;
   right: 10px;
-  width: 25px;
-  height: 25px;
+  display: none;
   cursor: pointer;
-  background: url(#close);
-  border-radius: 25px;
-  background: rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
 }
-.popup .close svg {
-  width: 100%;
-  height: 100%;
-} */
-
-    
-/*Diseño responsive*/
-  
-/* Width 700px*/
-
-/* @media screen and (max-width: 900px) {
-  #tamañoTexto {
-    font-size: 20px;
-  } */
-
-  /* aqui */
-  /* .popup .figure {
-    top: 50%;
-    left: 40%;
-  }
-  
-  .popup .figure img {
-    width: 130%;
-  }
-  
-  .popup figure figcaption {
-    width: 130%;
-  }
-  
-  .popup .figure .shadow {
-    width: 130%;
-  }
-
-  .popup .close {
-    left: 120%;
-  }
+svg {
+  filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.5));
 }
-
-@media screen and (max-width: 800px) {
-
-  .gallery .figure {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-  }
-
-  .popup .figure {
-    top: 50%;
-    left: 37%;
-  }
-  
-  .popup .figure img {
-    width: 140%;
-  }
-  
-  .popup .figure figcaption {
-    width: 140%;
-  }
-  
-  .popup .figure .shadow {
-    width: 140%;
-  }
-
-  .popup .close {
-    left: 130%;
-  }
+svg path {
+  fill: #FFF;
 }
-
-@media screen and (max-width: 600px) {
-  #tamañoTexto {
-    font-size: 18px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-
-  #tamañoTexto {
-    font-size: 15px;
-  }
-
-  .gallery .figure {
-    -ms-flex-preferred-size: 70%;
-        flex-basis: 70%;
-    margin: 0 auto;
-  }
-
-  .popup .close {
-    left: 120%;
-  }
-} */
-
-.myImg {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-#myImg:hover {opacity: 0.7;}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-
-/* Modal Content (image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-}
-
-/* Caption of Modal Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-}
-
-/* Add Animation */
-.modal-content, #caption {  
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)} 
-  to {-webkit-transform:scale(1)}
-}
-
-@keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
-}
-
-/* The Close Button */
-.close {
+.expand-button {
   position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
+  z-index: 999;
+  right: 10px;
+  top: 10px;
+  padding: 0px;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  opacity: 0;
+  transition: 0.2s opacity;
 }
 
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
+.expandable-image:hover .expand-button {
+  opacity: 1;
+}
+.expand-button svg {
+  width: 20px;
+  height: 20px;
+}
+.expand-button path {
+  fill: #FFF;
 }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
-
-
+.expandable-image img {
+  width: 100%;
+}

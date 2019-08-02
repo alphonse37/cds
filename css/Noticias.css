@@ -97,7 +97,7 @@
 
 /* Width 900px*/
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:992px) {
 
     .contenedor{
         display: flex;
@@ -117,7 +117,53 @@
         width: 90%;
         
     }
-}
+
+    .tabla1 {
+        overflow: scroll;
+        background-color: #fff;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr { 
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+        background-color: #cfdbeb;
+    }
+
+    td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 200px;
+        margin-left: 150px;
+    }
+
+    td:before {
+        position: absolute;
+        top: 12px;
+        left: 6px;
+        width: 200px;
+        padding-right: 40px;
+        white-space: nowrap;
+        margin-left: -150px;
+    }
+
+    td:nth-of-type(1):before { content: "Evento"; }
+    td:nth-of-type(2):before { content: "Descripción"; }
+    td:nth-of-type(3):before { content: "Fecha"; }
+    td:nth-of-type(4):before { content: "Hora";}
+    td:nth-of-type(5):before { content: "Lugar";}
+    td:nth-of-type(6):before { content: "Teléfono";}
+    }
 
 @media screen and (max-width: 800px){
 
