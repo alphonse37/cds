@@ -88,9 +88,9 @@
     </section>
 
 <section class="contenedor">
-    <section id="noticias" class="noticias">
+    <section id="galeria" class="noticias" v-for="imagen in galeria">
         <h5>Próximas convocatorias</h5><br>
-        <img src="./imagenes/contactanos/convocatoria Santa Ana.jpg" width="250" height="425" class="conv" alt="convocatoria">
+        <img :src="`data:image/jpg;base64,${imagen.imagen}`" alt="" width="75%">
     </section>
     <br>
     <br>
@@ -222,7 +222,7 @@
         <!-- Fin footer -->
 
         <!-- Script de documentos de Vue.js -->
-
+        <script src="./js/appGaleria.js"></script>
     <script src="./js/convocatoriasVue.js"></script>
 </body>
 </html>
